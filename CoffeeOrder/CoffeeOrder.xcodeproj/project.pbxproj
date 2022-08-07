@@ -12,6 +12,9 @@
 		5884105D289ED5C40016622C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5884105B289ED5C40016622C /* Main.storyboard */; };
 		5884105F289ED5C60016622C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5884105E289ED5C60016622C /* Assets.xcassets */; };
 		58841062289ED5C60016622C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58841060289ED5C60016622C /* LaunchScreen.storyboard */; };
+		588A627028A05BB70085330B /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588A626F28A05BB60085330B /* Order.swift */; };
+		588A627328A05F0C0085330B /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588A627228A05F0C0085330B /* OrderViewModel.swift */; };
+		588A627528A065370085330B /* AddCoffeeOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588A627428A065370085330B /* AddCoffeeOrderViewModel.swift */; };
 		58B42DBF289EEF8800442C6A /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B42DBE289EEF8800442C6A /* OrdersTableViewController.swift */; };
 		58B42DC1289EEFBD00442C6A /* AddOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B42DC0289EEFBD00442C6A /* AddOrderViewController.swift */; };
 		58B42DC4289EF39400442C6A /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B42DC3289EF39400442C6A /* WebService.swift */; };
@@ -25,6 +28,9 @@
 		5884105E289ED5C60016622C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58841061289ED5C60016622C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58841063289ED5C60016622C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		588A626F28A05BB60085330B /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		588A627228A05F0C0085330B /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		588A627428A065370085330B /* AddCoffeeOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoffeeOrderViewModel.swift; sourceTree = "<group>"; };
 		58B42DBE289EEF8800442C6A /* OrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
 		58B42DC0289EEFBD00442C6A /* AddOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewController.swift; sourceTree = "<group>"; };
 		58B42DC3289EF39400442C6A /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
@@ -60,6 +66,8 @@
 		58841054289ED5C40016622C /* CoffeeOrder */ = {
 			isa = PBXGroup;
 			children = (
+				588A627128A05EFE0085330B /* ViewModels */,
+				588A626E28A05B9D0085330B /* Models */,
 				58B42DC2289EF38400442C6A /* Services */,
 				58841069289ED6000016622C /* Controllers */,
 				58841055289ED5C40016622C /* AppDelegate.swift */,
@@ -79,6 +87,23 @@
 				58B42DC0289EEFBD00442C6A /* AddOrderViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		588A626E28A05B9D0085330B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				588A626F28A05BB60085330B /* Order.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		588A627128A05EFE0085330B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				588A627228A05F0C0085330B /* OrderViewModel.swift */,
+				588A627428A065370085330B /* AddCoffeeOrderViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		58B42DC2289EF38400442C6A /* Services */ = {
@@ -160,10 +185,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				588A627028A05BB70085330B /* Order.swift in Sources */,
+				588A627528A065370085330B /* AddCoffeeOrderViewModel.swift in Sources */,
 				58841056289ED5C40016622C /* AppDelegate.swift in Sources */,
 				58841058289ED5C40016622C /* SceneDelegate.swift in Sources */,
 				58B42DBF289EEF8800442C6A /* OrdersTableViewController.swift in Sources */,
 				58B42DC4289EF39400442C6A /* WebService.swift in Sources */,
+				588A627328A05F0C0085330B /* OrderViewModel.swift in Sources */,
 				58B42DC1289EEFBD00442C6A /* AddOrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
